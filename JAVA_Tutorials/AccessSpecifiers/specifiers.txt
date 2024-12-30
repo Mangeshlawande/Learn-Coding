@@ -1,0 +1,32 @@
+4 there are 4 access apecifiers 
+->private
+->protected
+->default
+->public 
+
+
+
+->private:
+    accessible only inside the class ;
+    it have limited accessibility;
+    1. the access level of private modifier is only within the class .it can't access outside the class
+
+->default :
+    accessible outside the class, outside the program in same package but not access in outside the package
+    it have same limit as nearly as public 
+    The access level of default modifier id only within the package . it can't be access from outside the package.
+    if you do not specify access level, it will be default.
+
+
+->protected :
+    access in same class , outside class and same package but can't accessible  outside the class
+    it have less limit than default access specifier
+    the access levelof protected classifier is within package and outside the package throughchild classif you do not
+    make the child class , it can't be accessed from outside the package
+    
+
+->public : 
+    can access anywhere eg. class, program, outside the package
+    it have no limit
+    the access level of public modifier is everywhere . it can be access within class , outside class 
+    within package and putside package

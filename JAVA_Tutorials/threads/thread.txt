@@ -1,0 +1,76 @@
+Thread states Thread Priority Synchronization
+    1.new thread
+    2.runnable thread
+    3.not runnable thread
+    4.Dead thread
+
+    1.new thread
+        all new thread are runnable(t1,t2,t3...)
+
+    2.runnable thread
+        when the start method invoked on a new() thread ,it gets to running by calling run method
+        it actually may running or may awaiting it turn to run 
+
+
+    3.not runnable thread 
+        the thread is stop for some input operation called not runnable thread
+        switching from not runnable state 
+            to runnable  to take input 
+            suspended thread to resume()(if thread has suspended then it's resume method must be invoked)
+            notify() or notifyAll() call to invoke this situation 
+            if a thread is blocked by on input/output 
+
+    4.Dead thread
+        last state 
+        when run method call stop method 
+        At this state the thread can't run again  bcoz it's Dead
+
+    thread  start live in the ready to run state , you can called only the start and stop method when
+    thread is in this state(new state) start(), stop() 
+    if you will try run another function then illegal thread exception occurred   or 
+    calling any methode beside start and stop causes an illegal thread exception(error)
+
+        2 types of error :
+            1.compile time error (normally syntax error )
+            2. runtime error (logical error)(exception )
+
+        java handle exception it terminate program ;
+        Hence programmer handle Exceptions, we use try catch to handle exception
+
+MultiThreading Drawback:
+     if 2 person have same joint account and it withdraw money at same time
+     means 2 threads run asynchronously / concurrently then balance is negative state 
+     it is not legal for good software..
+     array is asynchronousized types
+     To make thread safe, we need to apply Synchronization
+        defination: When we start two or more threadwithin a program there may be situation ,when mutliple thread 
+        try to access same resource i.e. bank joint account, so there is need of Synchronize the action of mutliple
+        thread and make sure only one thread can access the resource at given point in time.
+
+Thread Priority:
+    Assign a value to thread function 
+    function Name : 
+    1.setPriority()
+    2. getPriority()
+    we can set predefined static variable called MIN_PRIORITY; 
+    Thread.MIN_PRIORITY
+    instead of that we can use 0 as MIN_PRIORITY , when creating an object eg., setPriority(0) as lowest Priority
+    NORM_PRIORITY(5) is default Priority
+    MAX_PRIORITY(10) is maximum Priority
+
+In java for taking the input from user named scanner class 
+we need to make object of this class ,This class is present in util class 
+import java.util.Scanner;  // for 1 class 
+import java.util.*; // for all class 
+
+syntax: 
+   Scanner s1 = Scanner(System.in); //, in is static var 
+   int x = s1.nextInt();
+
+    //scanner  class ke nextInt() name ka function hota hai 
+
+    the input is stored in buffer , System.in is used to connect the buffer and keyboard;
+    buffer main raw type ka data hota hai, store enter button at last;
+    nextInt function raw to int if possible;
+
+

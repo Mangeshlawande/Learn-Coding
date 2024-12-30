@@ -1,0 +1,10 @@
+C++ file opening 
+
+ios :: in
+ios ::out
+ios ::update
+ios ::append
+ios ::binary
+
+ifstream == file ke under se content nikalne ke liye 
+ofstream == file ke under se content put karne ke liye 

@@ -1,0 +1,28 @@
+Exception Handling in java
+    The error occures  in  runtime Called exception , 
+    To avoid from terminating the prgram Exception handling is must .
+    Generally it's a logical error. compiler is a type of translator 
+    problem array: array index out of bound 
+
+    Arithematic Exception : any number divide by 0;
+        comiler creat an object as exception ahd throw it , this error will catch by comiler 
+        to restrict complier from catch an exception bcoz afer catching it will terminate the program 
+        we handle this exception by using try catch method ;
+
+
+    Null pointer Exeption 
+    string s1 ;
+    s1 = null;
+    s.o.p(s1.length())// nul pointer exception 
+default throw default  catch
+default throw our catch
+our throw default catch
+our throw our catch
+
+java catch error it will terminate the program
+
+class Example
+{
+    
+}
+

@@ -1,0 +1,86 @@
+
+function overloading :
+
+it not happens in parant and child 
+if function name same and different argument in same class  called function overloading;
+function ka name same aur argument different hote hain;
+
+class  A
+{
+    void f1(int x, int y)
+    {
+
+    }
+    void f1(int x)
+    {
+
+    }
+};
+
+int main()
+{
+    B b1;
+    b1.f1(2,4);
+    b1.f1(2);
+}
+
+
+
+function overriding :
+
+if function having name same and argument is also same is called function overriding 
+if function name same and same argument in different class  called function overriding;
+it happens in parent and child
+it happens in different classes only one fun is run  i.e. child class 
+e.g.,
+
+class A 
+{
+    void f1(int x , int y)
+    {
+
+    };
+
+}
+
+class B : A
+{
+    void f1(int x, int y)
+    {
+
+    }
+};
+
+int main()
+{
+    B b1;
+    b1.f1(2,4);
+}
+
+
+function hiding :
+if same arg is not find in child class ,it goes to parent class;
+if function name same and different argument in different class  called function hiding;
+
+class A 
+{
+    void f1()
+    {
+
+    };
+
+};
+
+class B : A
+{
+    void f1(int x, int y)
+    {
+        
+    }
+};
+
+int main()
+{
+    B b1;
+    b1.f1();
+}

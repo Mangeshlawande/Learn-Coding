@@ -1,0 +1,10 @@
+interface MouseListener
+{
+    public static void mouseClicked(MouseEvent e1)
+    {
+        void mouseEntered(MouseEvent e1);
+        void mouseExited(MouseEvent e1);
+        void mousePressed(MouseEvent e1);
+        void mouseReleased(MouseEvent e1);
+    }
+}

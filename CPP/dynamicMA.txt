@@ -1,0 +1,43 @@
+To make dynamic memory allocation 
+1. new
+2. delete
+
+static Mem Allocation 
+Dynamic Mem Allocation 
+
+static Mem Allocation =>
+..memory allocation in compile time
+
+main ()
+{
+    int x[20];
+
+}
+
+
+
+Dynamic Mem Allocation 
+
+dynamic memory have no name
+main ()
+{
+    int * k;// make pointer
+    k = new int;
+    *k = 23;
+
+    delete k;
+
+    int *r;
+    r = new int[15];
+    *r = 20;
+    *(r+0)= 22;
+    *(r+1) = 34;
+    *(r+2)= 43;
+    // delete array
+
+    delete []r;
+
+
+
+
+}

@@ -1,0 +1,67 @@
+/*
+A pure virtual function have no body
+if class have min one pure virtual fun is existed ,
+then we cannot define the object of that class 
+these concept is called abstract class
+>> Esi class jiska object nahi banaya ja sakta,
+
+>> kisi bhi class main kio bhi fun agar abstract hai aur aap as a child 
+class banana chahate ho to us fun ki overriding karni hi padegi
+nahi to uska objbhi nahi banega;
+
+
+
+
+
+syntax:
+class A 
+{
+    virtual void f1() = 0; // pure virtual fun
+}
+
+class B:A
+{
+void f1()
+{
+
+}
+}
+
+int main()
+{
+B b1;//jiska obj banega usi ka fun chalega
+b1.f1();// B ka objet banega , A ka nahi
+// by the concept of overriding it called first child object
+
+}
+
+## Abstract class ::
+jis class ka object nahi banaya ja sakta us class ko abstract class kaha jata hai
+
+
+class Box1
+{
+int x, y;
+public:
+void f1 ()
+{
+}
+virtual void f2() = 0;// pure virtual function
+
+}
+class Box2 : public Box1
+{
+// int x,y;
+public:
+void f2()
+{
+
+}
+
+};
+
+
+*/
+/*
+
+*/

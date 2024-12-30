@@ -1,0 +1,21 @@
+
+
+What is JDBC 
+key input/voice input in java application
+moving data in DB 
+connectivity MySQL/oracle/phpmyadmin/derby
+for connectivity load Driver First, Establish connection/prepare route
+
+
+Loading driver ==> Class.forName("pack.sql.mysql.Driver");
+    
+
+Establish Connection ==> con = DriverManager.getConnection(url.user.pass);
+
+Preparing Statements ==> ps con.prepareStatement(query_str);
+
+Executing Statements ==> execute() executeQuery() executeUpdate()
+
+Getting Results
+
+Closing Database Connection ==> con.close();
